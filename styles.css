@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Start Code*/
+html {
+    background-color: rgba(122, 191, 191, .5);
+}
+body {
+    background-color: #F2F2F2;
+    max-width: 414px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "details"
+    "ingredients"
+    "directions"
+    "aside"
+    "footer";
+}
+header {
+    grid-area: header;
+    padding-top: 180px;
+}header h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: ;
+}
+header img {
+    width: 100%;
+}
+
+menu{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+menu li, nav li{
+    display: flex;
+    list-style: none;
+   align-items: center;
+   justify-content: center;
+}
+li a{
+    text-decoration: none;
+}
+svg{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav{
+    position: absolute;
+    background-color: #F2F2F2;
+    width: 414px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 100px 200px 100px;
+}
+nav li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav :nth-child(2){
+    background-color: #EB5428;
+}
+.icon-tabler-tools-kitchen{
+    padding: 5px;
+}
+
+.icon{
+    margin: 0 auto;
+}
+
+.icon-tabler-user-circle{
+   stroke: #EB5428;
+}
+
+
+/* SEARCH INPUT */
+.search{
+    display: flex;
+    position: relative;
+    bottom: 170px;
+    width: 50%;
+    height: 30px;
+    margin: 0 auto;
+}
+.icon-tabler-search{
+    width: 30px;
+    position: absolute;
+right: 2px;
+bottom: -8px;
+}
+
+button{
+    position: relative;
+    width: 20%;
+}
+
+/* END SEARCH INPUT */
+
+
+
+/* MEDIA FOR MEDIUM SCREEN SIZES */
+@media screen and (min-width: 768px){
+    body{
+        width: 768px;
+    }
+}
+/* MEDIA FOR MEDIUM SCREEN SIZES */
+@media screen and (min-width: 1280px){
+    body{
+        width: 1280px;
+    }
+
+    
+}
