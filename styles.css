@@ -156,14 +156,30 @@ button{
         width: 768px;
         background-color: aquamarine;
     }
-
+    
     nav{
         width: 768px;
-        background-color: #F2F2F2;
-        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    nav li{
+        width: 80px;
+    }
+    
+    nav li:nth-child(1){
+        display: none;
+    }
+    nav li:nth-child(3){
+        padding-left: 380px;
         align-items: center;
-        justify-content: space-around;
-}
+        justify-content: center;
+    }
+    .search{
+        position: absolute;
+        top: 20px;
+        right: 40px;
+    }
 }
 /* MEDIA FOR LARGE SCREEN SIZES */
 @media only screen and (min-width: 1280px) {
@@ -171,4 +187,22 @@ button{
         width: 1280px;
         background-color: blue;
   }
+
+  nav{
+    width: 1280px;
+  }
+
+  header{
+    display: flex;
+    flex-direction: row;
+  }
+  menu{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+}
+
+menu li, nav li{
+    
+}
 }
